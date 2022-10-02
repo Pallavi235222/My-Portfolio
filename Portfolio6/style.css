@@ -1,0 +1,119 @@
+ *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+    }
+    body{
+        background: #000;
+        font-family: open sans;
+    }
+
+    header {
+        padding: 40px 50px;
+    }
+    header .logo{
+        float: left;
+        transition: transform .5s;
+    }
+    header .logo:hover{
+        transform: scale(1.1);
+
+    }
+    header .menu {
+        float: right;
+    }
+    header .menu ul li{
+        display: inline-block;
+        margin: 0 20px;
+    }
+    header .menu ul li:last-child{
+        margin-right: 0;
+    }
+    header .menu ul li a{
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all ease 0.5s;
+    }
+    header .menu ul li a:hover{
+        color: #fff700; 
+    }
+    /* header button */
+    #btn a{
+    background-color: #fff700;
+    color: #000;
+    padding: 14px 27px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+    #btn a:hover{
+        border-radius: 15px;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    /* container */
+    .home .container{
+        max-width: 1266px;
+        margin: 0 auto;
+    }
+    /* pallavi image */
+    .home .person {
+        float: right;
+        margin: 70px 80px 0;
+        position: relative;
+        border-radius: 70px 0 70px 0;
+        overflow: hidden;
+    }
+    .home .person img{
+        filter: brightness(1.5) ;
+    }
+    .home .person-overlay{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        background: #525252;
+        z-index: 99;
+        height: 100%;
+
+    }
+
+    /* pallavi text */
+    .home-text{
+        color: #fff;
+        margin-top: 220px;
+        position: absolute;
+    }
+
+    .home-text h6{
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        font-size: 16px;
+    }
+    .home-text h1{
+        text-transform: uppercase;
+        font-size: 100px;
+    }
+    .home-text p{
+        max-width: 500px;
+        font-size: 16px;
+        margin-top: 230px;
+    }
+    .home-text .name span{
+        margin-right: 130px;
+        display: inline-block;
+    }
+    .home-text .name span:last-child{
+        margin-right: 0;
+    }
+    /* DEFAULT STATE HIDE */
+    .home .person img,
+    .student span,
+    .name span,
+    .logo,
+    .menu li,
+    .small-intro span{
+        opacity: 0;
+    }
